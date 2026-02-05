@@ -1,4 +1,8 @@
-#Ignorerar uppladning/nedladdning till GitHub
+#Ignorerar uppladning/nedladdning av mappar till GitHub
 /.venv
 /Results
 /site
+
+#Ignorerar rapportfiler
+.html
+.png
