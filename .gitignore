@@ -1,0 +1,4 @@
+#Ignorerar uppladning/nedladdning till GitHub
+/.venv
+/Results
+/site
