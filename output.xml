@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.0 on win32)" generated="2026-02-05T12:34:57.726499" rpa="false" schemaversion="5">
+<suite id="s1" name="Trytops" source="C:\Users\Filip\Documents\PyCharm\trytops">
+<suite id="s1-s1" name="Test" source="C:\Users\Filip\Documents\PyCharm\trytops\test">
+<suite id="s1-s1-s1" name="Första" source="C:\Users\Filip\Documents\PyCharm\trytops\test\Första.robot">
+<test id="s1-s1-s1-t1" name="Öppna webbläsare" line="10">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-02-05T12:34:57.901845" elapsed="0.000231"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-05T12:34:57.902617" level="INFO">Opening browser 'chrome' to base url '127.0.0.1:8000/jurap.html'.</msg>
+<msg time="2026-02-05T12:34:59.602642" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-05T12:34:59.602905" level="FAIL">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=144.0.7559.132)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff666f3f3d5
+	0x7ff666f3f430
+	0x7ff666ce0ea6
+	0x7ff666ccd4f4
+	0x7ff666ccb8b5
+	0x7ff666ccbe22
+	0x7ff666ce5366
+	0x7ff666d8ab34
+	0x7ff666d6589a
+	0x7ff666d89d08
+	0x7ff666d2cb0c
+	0x7ff666d2da53
+	0x7ff66721b470
+	0x7ff66721586d
+	0x7ff66723621a
+	0x7ff666f5b235
+	0x7ff666f63a5c
+	0x7ff666f48844
+	0x7ff666f489f6
+	0x7ff666f2eb87
+	0x7ffd2d7fe8d7
+	0x7ffd2edec53c
+</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-02-05T12:34:57.902399" elapsed="1.702740">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=144.0.7559.132)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff666f3f3d5
+	0x7ff666f3f430
+	0x7ff666ce0ea6
+	0x7ff666ccd4f4
+	0x7ff666ccb8b5
+	0x7ff666ccbe22
+	0x7ff666ce5366
+	0x7ff666d8ab34
+	0x7ff666d6589a
+	0x7ff666d89d08
+	0x7ff666d2cb0c
+	0x7ff666d2da53
+	0x7ff66721b470
+	0x7ff66721586d
+	0x7ff66723621a
+	0x7ff666f5b235
+	0x7ff666f63a5c
+	0x7ff666f48844
+	0x7ff666f489f6
+	0x7ff666f2eb87
+	0x7ffd2d7fe8d7
+	0x7ffd2edec53c
+</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2026-02-05T12:34:59.605614" elapsed="0.000046"/>
+</kw>
+<status status="FAIL" start="2026-02-05T12:34:57.901015" elapsed="1.704970">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=144.0.7559.132)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff666f3f3d5
+	0x7ff666f3f430
+	0x7ff666ce0ea6
+	0x7ff666ccd4f4
+	0x7ff666ccb8b5
+	0x7ff666ccbe22
+	0x7ff666ce5366
+	0x7ff666d8ab34
+	0x7ff666d6589a
+	0x7ff666d89d08
+	0x7ff666d2cb0c
+	0x7ff666d2da53
+	0x7ff66721b470
+	0x7ff66721586d
+	0x7ff66723621a
+	0x7ff666f5b235
+	0x7ff666f63a5c
+	0x7ff666f48844
+	0x7ff666f489f6
+	0x7ff666f2eb87
+	0x7ffd2d7fe8d7
+	0x7ffd2edec53c
+</status>
+</test>
+<doc>Första Robot</doc>
+<status status="FAIL" start="2026-02-05T12:34:57.761669" elapsed="1.845072"/>
+</suite>
+<status status="FAIL" start="2026-02-05T12:34:57.760208" elapsed="1.847198"/>
+</suite>
+<status status="FAIL" start="2026-02-05T12:34:57.727581" elapsed="1.880551"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Trytops" id="s1" pass="0" fail="1" skip="0">Trytops</stat>
+<stat name="Test" id="s1-s1" pass="0" fail="1" skip="0">Trytops.Test</stat>
+<stat name="Första" id="s1-s1-s1" pass="0" fail="1" skip="0">Trytops.Test.Första</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
