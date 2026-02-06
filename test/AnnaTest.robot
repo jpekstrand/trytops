@@ -1,0 +1,49 @@
+*** Settings ***
+Library    SeleniumLibrary
+Resource    ../Resources/Anna.resource
+Resource    ../Resources/Common.resource
+
+*** Test Cases ***
+köpa biljeter från vip info
+    Suite Setup
+    Click Element    link:Learn More
+misslyckat försök att välja antal biljetter
+    Select From List By Label    id:ticket-category    VIP Ticket
+    Input Text    id:ticket-quantity    2
+    Click Button    Add to Cart
+    Handle Alert    action=ACCEPT
+Försöker logga in
+    Input Text    id:login-username    Anna9
+    Input Text    id:login-password    Hejsan123
+    Click Button    Login
+    Sleep    5
+    Click Element    link:Register
+Registreras som användare
+    Input Text    id:reg-username    Anna9
+    Input Text    id:reg-password    Hejsan123
+    Click Button    Register
+    Sleep    5
+login lyckas
+    Click Button    Login
+    Sleep    5
+Försöka att fullfölja köp av biljett
+    Click Element    link:Cart
+    Click Element    link:Buy Tickets
+Lyckat val av antal biljetter (men blev 12st)
+    Set Selenium Speed    0.5
+    Select From List By Label    id:ticket-category    VIP Ticket
+    Input Text    id:ticket-quantity    12
+    Click Button    Add to Cart
+    Handle Alert    action=ACCEPT
+Ta bort fel antal biljetter
+    Click Element    link:Cart
+    Click Button    Remove
+    Click Element    link:Buy Tickets
+köp av korrekt antal biljetter
+    Select From List By Label    id:ticket-category    VIP Ticket
+    Input Text    id:ticket-quantity    2
+    Click Button    Add to Cart
+    Handle Alert    action=ACCEPT
+    Click Element    link:Cart
+    Click Element    id:checkout-button
+    Handle Alert    action=ACCEPT
