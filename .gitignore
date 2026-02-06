@@ -1,9 +1,15 @@
 #Ignorerar uppladning/nedladdning av mappar till GitHub
-/.venv
-/Results
-/site
-/.idea
+.venv/
+Results/
+site/
+.idea/
+venv/
+ENV/
 
 #Ignorerar rapportfiler
 .html
 .png
+
+# Python cache-filer
+__pycache__/
+*.pyc
