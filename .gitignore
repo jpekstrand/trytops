@@ -9,6 +9,7 @@ ENV/
 #Ignorerar rapportfiler
 .html
 .png
+.xml
 
 # Python cache-filer
 __pycache__/

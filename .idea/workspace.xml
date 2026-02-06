@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bdf72ee-70cb-47a6-9ae2-45c32b46df4e" name="Changes" comment="La till att .gitignore inte laddar upp log filer och screenshots">
+    <list default="true" id="5bdf72ee-70cb-47a6-9ae2-45c32b46df4e" name="Changes" comment="Updaterat .gitignore">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Labb_trytops.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Labb_trytops.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-4.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Första.robot" beforeDir="false" afterPath="$PROJECT_DIR$/test/Första.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,28 +45,28 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Robot.Öppna webbläsare.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "ai.playground.ignore.import.keys.banner.in.settings": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Filip/Documents/PyCharm/trytops",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Robot.Öppna webbläsare.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Filip/Documents/PyCharm/trytops&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Filip\Documents\PyCharm\trytops\Results" />
@@ -115,7 +120,8 @@
       <updated>1770035062291</updated>
       <workItem from="1770035063313" duration="366000" />
       <workItem from="1770036807145" duration="1516000" />
-      <workItem from="1770217233313" duration="6767000" />
+      <workItem from="1770217233313" duration="8350000" />
+      <workItem from="1770363128222" duration="5521000" />
     </task>
     <task id="LOCAL-00001" summary="Laddade jag upp websidan?">
       <option name="closed" value="true" />
@@ -141,7 +147,31 @@
       <option name="project" value="LOCAL" />
       <updated>1770293176950</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="La till att .gitignore inte laddar upp .idea mapp">
+      <option name="closed" value="true" />
+      <created>1770293577927</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1770293577927</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Test push för gitignore">
+      <option name="closed" value="true" />
+      <created>1770293756441</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1770293756441</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updaterat .gitignore">
+      <option name="closed" value="true" />
+      <created>1770364288423</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1770364288423</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,9 +192,12 @@
     <MESSAGE value="Laddade jag upp websidan?" />
     <MESSAGE value="Skapade .gitignore" />
     <MESSAGE value="La till att .gitignore inte laddar upp log filer och screenshots" />
-    <option name="LAST_COMMIT_MESSAGE" value="La till att .gitignore inte laddar upp log filer och screenshots" />
+    <MESSAGE value="La till att .gitignore inte laddar upp .idea mapp" />
+    <MESSAGE value="Test push för gitignore" />
+    <MESSAGE value="Updaterat .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updaterat .gitignore" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/trytops$Öppna_webbläsare.coverage" NAME="Öppna webbläsare Coverage Results" MODIFIED="1770291297450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/trytops$Öppna_webbläsare.coverage" NAME="Öppna webbläsare Coverage Results" MODIFIED="1770294570772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
