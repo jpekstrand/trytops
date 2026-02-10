@@ -1,6 +1,3 @@
-*** Settings ***
-Library    SeleniumLibrary
-
 
 *** Keywords ***
 Suite Setup
