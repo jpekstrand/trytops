@@ -1,5 +1,4 @@
 *** Settings ***
-Library    SeleniumLibrary
 Resource    ../Resources/Anna.resource
 Resource    ../Resources/Common.resource
 
@@ -17,8 +16,8 @@ Försöker logga in
     Input Text    id:login-password    Hejsan123
     Click Button    Login
     Sleep    5
-    Click Element    link:Register
 Registreras som användare
+    Click Element    link:Register
     Input Text    id:reg-username    Anna9
     Input Text    id:reg-password    Hejsan123
     Click Button    Register
