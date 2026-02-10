@@ -31,11 +31,13 @@ login lyckas
     Wait Until Element Is Visible    link:Cart
 
 Försöka att fullfölja köp av biljett
+    Set Selenium Speed    0.5
     Click Element    link:Cart
     Click Element    link:Buy Tickets
+     Set Selenium Speed    0
 
 Lyckat val av antal biljetter (men blev 12st)
-    Wait Until Element Is Visible    id:ticket-quantity:
+    Wait Until Element Is Visible    id:ticket-quantity
     Select From List By Label    id:ticket-category    VIP Ticket
     Input Text    id:ticket-quantity    12
     Click Button    Add to Cart
