@@ -1,76 +1,37 @@
 *** Settings ***
-Documentation    Klara köper biljetter
-Library    SeleniumLibrary
+Documentation    Klara köper biljetter till klassen
 Resource    ../Resources/Common.resource
+Resource    ../Resources/KlaraTest.resource
 
 
 *** Test Cases ***
-Första försök av bokning
+[TCK001] - Första försök av bokning
     Suite Setup
-    Click Element    link:Book Safaris
-    Input Text    id:safari-date    2026
-    Press Keys    None    TAB
-    Input Text    id:safari-date    03-05
-    Select From List By Label      id:safari-type      Herbivore Tour
-    Click Button    id:add-to-cart
-    Handle Alert    action=ACCEPT
-    Sleep     5
+    Första försök av bokning
 
-Registrera som användare
-    Click Element    link:Register
-    Input Text    id:reg-username    KlaraLärare
-    Input Text    id:reg-password    Minaeleverärbäst!
-    Click Button    Register
-    Sleep    5
+[TCK002] - Registrera som användare
+    Registrera Som Användare
 
-Login som användare
-    Input Text    id:login-username    KlaraLärare
-    Input Text    id:login-password    Minaeleverärbäst!
-    Click Button    Login
-    Sleep    5
+[TCK003] - Login som användare
+    Login Som Användare
 
-Boka Safari utan biljetter
-    Click Element    link:Book Safaris
-    Input Text    id:safari-date    2026
-    Press Keys    None    TAB
-    Input Text    id:safari-date    05-03
-    Select From List By Label      id:safari-type      Herbivore Tour
-    Click Button    id:add-to-cart
-    Sleep     5
+[TCK004] - Boka Safari utan biljetter
+   Boka Safari Utan Biljetter
 
-Köp biljett till vuxen
-    Click Element    link:Buy Tickets
-    Select From List By Label    id:ticket-type    Adult
-    Select From List By Label    id:ticket-category    VIP Ticket
-    Input Text    id:ticket-quantity    1
-    Click Button    Add to Cart
-    Handle Alert    action=ACCEPT
+[TCK005] - Köp biljett till vuxen
+   Köp Biljett Till Vuxen
 
 
-Köp biljetter till elever
-    Select From List By Label    id:ticket-type    Child
-    Select From List By Label    id:ticket-category    VIP Ticket
-    Input Text    id:ticket-quantity    26
-    Click Button    Add to Cart
-    Handle Alert    action=ACCEPT
+[TCK006] - Köp biljetter till elever
+    Köp Biljetter Till Elever
 
-Boka safari med biljetter
-    Click Element    link:Book Safaris
-    Input Text    id:safari-date    2026
-    Press Keys    None    TAB
-    Input Text    id:safari-date    05-03
-    Select From List By Label      id:safari-type      Herbivore Tour
-    Click Button    id:add-to-cart
-    Handle Alert    action=ACCEPT
-    Sleep     5
+[TCK007] - Boka safari med biljetter
+    Boka Safari Med Biljetter
     
     
-Betala för biljetter
-    Click Element     link:Cart
-    Click Element    id:checkout-button
-    Handle Alert    action=ACCEPT
-    
-    
+[TCK008] - Betala för biljetter
+    Betala För Biljetter
+    Suite Teardown
 
 
 
