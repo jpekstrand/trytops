@@ -1,11 +1,11 @@
 *** Settings ***
+Resource    Common.resource
 Library    SeleniumLibrary
 
-*** Variables ***
-
-
 *** Keywords ***
-Första försök av bokning
+#GIVEN
+Kunden går inn på hemsidan och försöker boka safari
+    Suite Setup
     Click Element    link:Book Safaris
     Input Text    id:safari-date    2026
     Press Keys    None    TAB
@@ -14,13 +14,15 @@ Första försök av bokning
     Click Button    id:add-to-cart
     Handle Alert    action=ACCEPT
 
-Registrera som användare
+#THEN
+Sen behöver kunden registrera sig
     Click Element    link:Register
     Input Text    id:reg-username    KlaraLärare
     Input Text    id:reg-password    Minaeleverärbäst!
     Click Button    Register
 
-Login som användare
+#andTHEN
+Och logga in som användare
     Click Element    link:Login
     Wait Until Element Is Visible    id:login-username
     Input Text    id:login-username    KlaraLärare
@@ -28,8 +30,8 @@ Login som användare
     Click Button    Login
     Sleep    5
 
-
-Boka Safari utan biljetter
+#andTHEN
+Sen gå tillbaka och försöka boka safari igen
     Click Element    link:Book Safaris
     Input Text    id:safari-date    2026
     Press Keys    None    TAB
@@ -38,7 +40,8 @@ Boka Safari utan biljetter
     Click Button    id:add-to-cart
     Sleep     5
 
-Köp biljett till vuxen
+#andTHEN
+Sen får felmeddelande och köper biljett til sig själv
     Click Element    link:Buy Tickets
     Select From List By Label    id:ticket-type    Adult
     Select From List By Label    id:ticket-category    VIP Ticket
@@ -46,15 +49,16 @@ Köp biljett till vuxen
     Click Button    Add to Cart
     Handle Alert    action=ACCEPT
 
-
-Köp biljetter till elever
+#andTHEN
+Sen köper biljetter till elever
     Select From List By Label    id:ticket-type    Child
     Select From List By Label    id:ticket-category    VIP Ticket
     Input Text    id:ticket-quantity    26
     Click Button    Add to Cart
     Handle Alert    action=ACCEPT
 
-Boka safari med biljetter
+#andTHEN
+Sen bokar safari med biljetter
     Click Element    link:Book Safaris
     Input Text    id:safari-date    2026
     Press Keys    None    TAB
@@ -64,8 +68,9 @@ Boka safari med biljetter
     Handle Alert    action=ACCEPT
     Sleep     5
 
-
-Betala för biljetter
+#andTHEN
+Därefter betalar för biljetter och checkar ut
     Click Element     link:Cart
     Click Element    id:checkout-button
     Handle Alert    action=ACCEPT
+    Suite Teardown

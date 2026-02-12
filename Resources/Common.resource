@@ -1,5 +1,5 @@
 *** Settings ***
-Library    SeleniumLibrary    timeout=20s    implicit_wait=10s
+Library    SeleniumLibrary    timeout=20s
 
 *** Keywords ***
 Suite Setup
