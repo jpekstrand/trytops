@@ -3,11 +3,11 @@ Resource    ../Resources/T3.resource
 
 
 *** Test Cases ***
-[T3-TC01] - Kund kommer in på första sidan och väljer learn more på VIP tickets
-    Kund kommer in på första sidan och väljer learn more på VIP tickets
+[T3-TC01] - Kund kommer in på startsidan och väljer learn more på VIP tickets
+    Kund kommer in på startsidan och väljer learn more på VIP tickets
 
-[T3-TC02] - Sen misslyckas kunden att välja antal biljetter
-    Sen misslyckas kunden att välja antal biljetter
+[T3-TC02] - Försöker välja VIP-Biljetter
+    Försöker välja VIP-Biljetter
 
 [T3-TC03] - Kunden försöker logga in men kan ej, måste registreras först
     Kunden försöker logga in men kan ej, måste registreras först

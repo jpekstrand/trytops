@@ -5,11 +5,11 @@ Resource    ../Resources/Common.resource
 *** Variables ***
 
 *** Keywords ***
-Kund kommer in på första sidan och väljer learn more på VIP tickets
+Kund kommer in på startsidan och väljer learn more på VIP tickets
     Suite Setup
     Click Element    link:Learn More
 
-Sen misslyckas kunden att välja antal biljetter
+Försöker välja VIP-Biljetter
     Select From List By Label    id:ticket-category    VIP Ticket
     Input Text    id:ticket-quantity    2
     Click Button    Add to Cart
