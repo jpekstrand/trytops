@@ -1,7 +1,7 @@
 *** Settings ***
 #Resource    ../Resources/Common.resource
 Resource    ../Resources/VG-FJI.resource
-Test Tags    [Functional]    [VG-FJI]
+Test Tags    [VG-FJI]     [Negativ Test]
 
 
 *** Test Cases ***
