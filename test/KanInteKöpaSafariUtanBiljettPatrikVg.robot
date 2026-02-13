@@ -1,6 +1,7 @@
 *** Settings ***
 Resource    ../Resources/KanInteKöpaSafariUtanBiljettPatrikVg.resource
 Library    SeleniumLibrary
+Test Tags    [VG-PE]    [Negativt Test]
 
 
 *** Test Cases ***
