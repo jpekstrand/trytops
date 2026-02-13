@@ -1,7 +1,6 @@
 *** Settings ***
-Documentation    Klara köper biljetter till klassen
 Resource    ../Resources/T2.resource
-
+Test Tags    [Functional]    [Critical]
 
 *** Test Cases ***
 [T2-TC01] - Kunden går inn på hemsidan och försöker boka safari

@@ -1,5 +1,6 @@
 *** Settings ***
 Resource    ../Resources/T3.resource
+Test Tags    [Functional]    [Critical]
 
 
 *** Test Cases ***
