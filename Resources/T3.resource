@@ -3,6 +3,8 @@ Library    SeleniumLibrary
 Resource    ../Resources/Common.resource
 
 *** Variables ***
+${USERNAME}    Anna9
+${PASSWORD}    Hejsan123
 
 *** Keywords ***
 Kund kommer in på startsidan och väljer learn more på VIP tickets
@@ -16,21 +18,21 @@ Försöker välja VIP-Biljetter
     Handle Alert    action=ACCEPT
 
 Kunden försöker logga in men kan ej, måste registreras först
-    Input Text    id:login-username    Anna9
-    Input Text    id:login-password    Hejsan123
+    Input Text    id:login-username    ${USERNAME}
+    Input Text    id:login-password    ${PASSWORD}
     Click Button    Login
 
 Sen registrerar kunden sig
     Click Element    link:Register
-    Input Text    id:reg-username    Anna9
-    Input Text    id:reg-password    Hejsan123
+    Input Text    id:reg-username    ${USERNAME}
+    Input Text    id:reg-password    ${PASSWORD}
     Click Button    Register
     Wait Until Page Contains Element    id:register-message
 
 Sen lyckas kunden logga in
     Click Element    link:Login
-    Input Text    id:login-username    Anna9
-    Input Text    id:login-password    Hejsan123
+    Input Text    id:login-username    ${USERNAME}
+    Input Text    id:login-password    ${PASSWORD}
     Click Button    Login
     Wait Until Element Is Visible    link:Cart
 
