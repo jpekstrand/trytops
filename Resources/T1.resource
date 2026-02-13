@@ -2,20 +2,24 @@
 Resource    ../Resources/Common.resource
 Library    SeleniumLibrary
 
+*** Variables ***
+${UserN}    Fabian
+${PasW}    12345678
+
 *** Keywords ***
 #GIVEN
 Kunden är på hemsidan och ska reigstrerar sig
     Suite Setup
     Click Element    link:Register
-    Input Text    id:reg-username    Fabian
-    Input Text    id:reg-password    12345678
+    Input Text    id:reg-username    ${UserN}
+    Input Text    id:reg-password    ${PasW}
     Click Button    Register
 
 #WHEN
 Sen loggar kunden in på jurastina sidan
     Click Element    link:Login
-    Input Text    id:login-username    Fabian
-    Input Text    id:login-password    12345678
+    Input Text    id:login-username    ${UserN}
+    Input Text    id:login-password    ${PasW}
     Click Button    Login
     Sleep    5
 
