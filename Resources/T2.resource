@@ -2,6 +2,10 @@
 Resource    Common.resource
 Library    SeleniumLibrary
 
+*** Variables ***
+${UserN}   KlaraLärare
+${PasW}    Minaeleverärbäst!
+
 *** Keywords ***
 #GIVEN
 Kunden går inn på hemsidan och försöker boka safari
@@ -17,16 +21,16 @@ Kunden går inn på hemsidan och försöker boka safari
 #THEN
 Sen behöver kunden registrera sig
     Click Element    link:Register
-    Input Text    id:reg-username    KlaraLärare
-    Input Text    id:reg-password    Minaeleverärbäst!
+    Input Text    id:reg-username    ${UserN}
+    Input Text    id:reg-password    ${PasW}
     Click Button    Register
 
 #andTHEN
 Och logga in som användare
     Click Element    link:Login
     Wait Until Element Is Visible    id:login-username
-    Input Text    id:login-username    KlaraLärare
-    Input Text    id:login-password    Minaeleverärbäst!
+    Input Text    id:login-username    ${UserN}
+    Input Text    id:login-password    ${PasW}
     Click Button    Login
     Sleep    5
 
