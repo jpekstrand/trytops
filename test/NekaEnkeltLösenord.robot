@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Liam Bred VG uppgift
+Documentation    Liam Bred VG uppgift. Test för att se till så att lösenordet blir nekat ifall det är för kort när man registrerar sig.
 Resource    ../Resources/NekaEnkeltLösenord.resource
 Test Tags    [VG-LB]    [negativ test]
 

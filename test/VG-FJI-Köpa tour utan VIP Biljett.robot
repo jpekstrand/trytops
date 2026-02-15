@@ -1,6 +1,7 @@
 *** Settings ***
 #Resource    ../Resources/Common.resource
 Resource    ../Resources/VG-FJI.resource
+Documentation    Test för att se så det ej går att köpa helgbiljett för safari med standardbiljett
 Test Tags    [VG-FJI]     [Negativ Test]
 
 

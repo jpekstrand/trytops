@@ -1,8 +1,8 @@
 *** Settings ***
 Resource    ../Resources/KanInteKöpaSafariUtanBiljettPatrikVg.resource
 Library    SeleniumLibrary
+Documentation    Test för att se så man inte kan kringgå biljettköp utan måste ha biljett för att gå på Safari
 Test Tags    [VG-PE]    [Negativt Test]
-
 
 *** Test Cases ***
 #Given
